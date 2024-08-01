@@ -102,7 +102,7 @@ button:hover {
 }
 
 #transactions-list{
-  background: #fff;
+  dbackground: red;
   width: 80%
 }
 
@@ -129,4 +129,18 @@ button:hover {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+@media (width > 760px){
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.table-cell {
+    flex: 1;
+    padding: 10px;
+}
 }
