@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #cefad0;
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.auth-links, .header-button {
+    display: flex;
+    align-items: center;
+}
+
+.header-button {
+    background: #5cb85c;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 4px;
+}
+
+.header-button:hover {
+    background: #4cae4c;
+}
+
+.hidden {
+    display: none;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+.auth-form, #dashboard {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+    display: block;
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #fff;
+    color: #4cae4c;
+    border: 2px solid #4cae4c;
+    border-radius:8px;
+    width: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+#add-transaction-button{
+  width: 100%;
+  background: #4cae4c;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+#transaction-form, #transactions-list {
+    margin: 20px 0;
+}
+
+#dashboard{
+  dwidth:100%;
+}
+
+#transaction-form{
+  background: #4cae4c;
+  color: #fff;
+  padding: 4em 1em;
+}
+
+#transactions-list{
+  background: #fff;
+  width: 80%
+}
+
+.transaction-item {
+  position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:16px 10px;
+    background: #fff;
+    color:#222;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-left: 2px solid #4cae4c;
+    width: 100%;
+}
+
+.transaction-item .delete-button {
+    color: #222;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: gray;
+    padding: 0px 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
